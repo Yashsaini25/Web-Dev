@@ -2,7 +2,7 @@ import express from "express"
 
 const app=express()
 app.use(express.json())
-const port=3004
+const port=process.env.PORT || 3006
 
 let teaData=[]
 let nextId=1
